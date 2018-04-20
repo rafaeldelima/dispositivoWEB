@@ -1,1 +1,1 @@
-export const DISPOSITIVO_API: string = "http://localhost:8080";
+export const DISPOSITIVO_API: string = "http://35.227.61.210:8080";
