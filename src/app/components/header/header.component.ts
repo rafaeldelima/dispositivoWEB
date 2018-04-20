@@ -19,7 +19,11 @@ export class HeaderComponent implements OnInit {
   }
 
   getNomeUsuario(){
-    return this.shared.usuario.nome + " - " + this.shared.usuario.email + "   ";
+    if(this.shared.usuario == null){
+      return "";
+    }else{
+      return this.shared.usuario.nome + " - " + this.shared.usuario.email + "   ";
+    } 
   }
 
   realizarLoggout(){
